@@ -105,13 +105,20 @@
     <h1>Si te gustó nuestro contenido y quieres contactarte con nosotros, rellena el siguiente formulario:</h1>
 
     <form action="/my-handling-form-page" method="post">
-        <label for="name">Nombre <br></label>
-        <input type="text" id="name" name="user_name" />
+        <label for="nombre">Nombre <br></label>
+        <input type="text" placeholder="Pon tu nombre aquí..." id="nombre" name="nombre" />
         <label for="mail">Correo electrónico <br></label>
-        <input type="email" id="mail" name="user_mail" />
+        <input type="email" id="mail" placeholder="ejemplo@gmail.com" name="user_mail" />
         <label for="msg">Mensaje <br></label>
-        <textarea id="msg" name="user_message"></textarea>
+        <textarea id="msg" placeholder="Pon tu mensaje aquí!" name="user_message"></textarea>
     </form>
+
+    <label for="motivo">Cuál es el motivo de tu consulta?</label>
+    <select id="motivo" name="motivo">
+        <option value="compra">Compra</option>
+        <option value="Consulta">Duda</option>
+        <option value="Venta">Venta</option>
+    </select>
     <button> Enviar </button>
 </div>
 
