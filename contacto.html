@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contáctanos!</title>
+    <style>
+        body {
+            font-family: "monospace", "Arial";
+            background-color: rgba(253, 255, 247);
+        }
+
+        .encabezado-index {
+            background-color: rgba(255, 237, 101);
+            padding: 20px;
+            color: rgba(80, 81, 79);
+            font-size: 25px;
+        }
+
+        .encabezado-index h1 {
+            text-align: center;
+        }
+
+        .nav-bar {
+            display: grid;
+            justify-items: center;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: rgba(80, 81, 79);
+            margin: 50px;
+            padding: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+
+        .nav-bar a:hover {
+            background-color: rgba(89, 255, 160, 0.7);
+        }
+
+        .descripcion {
+            width: 100%;
+            margin-top: 50px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .descripcion *{
+            margin-top: 10px;
+        }
+
+        .descripcion h1 {
+            font-family: monospace;
+            color: rgba(80, 81, 79);
+            font-size: 23px;
+        }
+
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        button {
+            width: 300px;
+            height: 55px;
+            font-size: 20px;
+            border-color: white;
+            font-family: monospace;
+            font-weight: lighter;
+            background-color: rgba(255, 105, 180, 0.62);
+        }
+    </style>
+</head>
+<body>
+<div class="encabezado-index">
+    <h1>Contáctanos!</h1>
+</div>
+<div class="nav-bar">
+    <nav><a href="index.html"> Inicio</a>
+        <a href="galeria.html"> Galería</a>
+        <a href="contacto.html"> Contáctanos</a>
+    </nav>
+</div>
+
+<div class="descripcion">
+    <h1>Si te gustó nuestro contenido y quieres contactarte con nosotros, rellena el siguiente formulario:</h1>
+
+    <form action="/my-handling-form-page" method="post">
+        <label for="name">Nombre <br></label>
+        <input type="text" id="name" name="user_name" />
+        <label for="mail">Correo electrónico <br></label>
+        <input type="email" id="mail" name="user_mail" />
+        <label for="msg">Mensaje <br></label>
+        <textarea id="msg" name="user_message"></textarea>
+    </form>
+    <button> Enviar </button>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería de fotos</title>
+    <style>
+        body {
+        font-family: "monospace", "Arial";
+        background-color: rgba(253, 255, 247);
+    }
+
+    .encabezado-index {
+        background-color: rgba(255, 237, 101);
+        padding: 20px;
+        color: rgba(80, 81, 79);
+        font-size: 25px;
+    }
+
+    .encabezado-index h1 {
+        text-align: center;
+    }
+
+    .nav-bar {
+        display: grid;
+        justify-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .nav-bar a {
+        text-decoration: none;
+        color: rgba(80, 81, 79);
+        margin: 50px;
+        padding: 5px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+    }
+
+    .nav-bar a:hover {
+        background-color: rgba(89, 255, 160, 0.7);
+    }
+
+    .fotos-container  {
+        width: 100%;
+        margin: 50px;
+        display: inline-block;
+    }
+
+        .fotos-container img {
+            width: 570px;
+            height: 570px;
+            margin: 20px;
+            transition: 2ms;
+        }
+
+        .fotos-container img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+<div class="encabezado-index">
+    <h1>Galería de Fotos</h1>
+</div>
+<div class="nav-bar">
+    <nav><a href="index.html"> Inicio</a>
+        <a href="galeria.html"> Galería</a>
+        <a href="contacto.html"> Contáctanos</a>
+    </nav>
+</div>
+
+<div class="fotos-container">
+    <img src="img1.jpg" alt="foto1">
+    <img src="img2.jpg" alt="foto2">
+    <img src="img3.jpg" alt="foto3">
+</div>
+
+</body>
+</html>

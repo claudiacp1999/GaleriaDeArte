@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería de Arte</title>
+    <style>
+        body {
+            font-family: "monospace", "Arial";
+            background-color: rgba(253, 255, 247);
+        }
+
+        .encabezado-index {
+            background-color: rgba(255, 237, 101);
+            padding: 20px;
+            color: rgba(80, 81, 79);
+            font-size: 25px;
+        }
+
+        .encabezado-index h1 {
+            text-align: center;
+        }
+
+        .nav-bar {
+            display: grid;
+            justify-items: center;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: rgba(80, 81, 79);
+            margin: 50px;
+            padding: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+
+        .nav-bar a:hover {
+            background-color: rgba(89, 255, 160, 0.7);
+        }
+
+        .highlight {
+            color: white;
+            background-color: rgba(80, 81, 79, 0.7);
+        }
+
+        .quienes-somos {
+            display: inline-block;
+            color: white;
+            width: 450px;
+            height: 250px;
+            font-size: 50px;
+            background-color: rgba(180, 173, 234);
+            margin: 40px;
+        }
+
+        .quienes-somos h1 {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .descripcion {
+            width: 700px;
+            margin-top: 50px;
+            display: inline-block;
+            font-family: monospace;
+            color: rgba(80, 81, 79, 0.72);
+            font-size: 23px;
+            margin-left: 20px;
+
+        }
+
+        .linea-debajo {
+            text-decoration: underline;
+        }
+
+        .contenido {
+            width: 100%;
+            text-align: center;
+        }
+
+        .nombre {
+            color: hotpink;
+        }
+    </style>
+</head>
+<body>
+<div class="encabezado-index">
+    <h1>Galería de Arte por <span class="nombre">Claudia Conejeros</span></h1>
+</div>
+<div class="nav-bar">
+    <nav><a href="index.html"> Inicio</a>
+        <a href="galeria.html"> Galería</a>
+        <a href="contacto.html"> Contáctanos</a>
+    </nav>
+</div>
+<div class="contenido">
+    <div class="quienes-somos">
+        <h1>Quiénes somos?</h1>
+    </div>
+    <div class="descripcion">
+        <p>Somos una galería de arte independiente en el centro de Santiago, Chile. Nos encantan los colores pasteles y el
+            estilo aesthetic. En nuestra página web podrás encontrar algunas fotos de nuestra galería y nuestro formulario
+            de contacto.
+            <br> Esta página web fue creada por Claudia Conejeros para <span class="highlight">CIISA</span>. <span
+                    class="linea-debajo">El único elemento creado por IA son las imágenes</span> :).</p>
+    </div>
+</div>
+
+</body>
+</html>
